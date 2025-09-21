@@ -1,0 +1,2 @@
+# myresume
+ Sardorbek Moydinov

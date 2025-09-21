@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.container .rigth_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600; 
+    line-height: 1.5em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: gold;
+}
+.contactInfo{
+    padding-top: 40px;
+
+}
+.title{
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+
+}
+.title{
+    padding-top: 15px;
+    margin-bottom: -2px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.contactInfo_education li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.contactInfo_education h5{
+    color: #03a9f4;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+}
+.contactInfo_education h4:nth-child(2){
+    color: gold;
+    font-weight: 500;
+    margin: 0 0 10px 10px;
+}
+.contactInfo_education h4{
+    color: rgb(209, 207, 248);
+    font-weight: 300;
+    margin: 0 0 10px 10px;
+    text-align: center;
+}
+
+.contactInfo_lang .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo_lang .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+    
+}
+.contactInfo_lang .text{
+    color: #fff;
+    margin: 10px 10px 10px 10px;
+    padding-top: 410px;
+    margin-top: 150px;
+    font-variant: inherit;
+    font-style: italic;
+    font-weight: bold;
+}
+.contactInfo_lang li{
+    list-style: none;
+    padding-top: 10px;
+}
+.about{
+    margin-bottom: 50px;
+    
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p{
+    color: #333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    padding-right: 20px;
+    margin: 20px 0 20px 20px;
+    row-gap: 25px;
+    grid-row: span;
+
+}
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .text p{
+    font-weight: bold;
+    font-style: oblique;
+}
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+    margin: 0 0 0 0 ;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    padding-inline-start: 120px;
+}
+.about_skills .box{
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about_skills .box h4{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-style: italic ;
+    color: #da2323;
+    font-weight: 1500;
+    gap: 15px;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+.about_skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    border: solid 1px rgb(109, 109, 109);
+    border-radius: 95px;
+
+}
+.about_skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: green;
+    border-radius: 95px;
+}
+.text1{
+    color: blue;
+    font-size: small;
+    font-style: italic;
+    padding-inline-start: 40%;
+}
+.about_interests ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.about_interests ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.about_interests ul li .fa{
+    color:#03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+.scan{
+    align-items: center;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 40px;
+}
+.scan img{
+    align-items: center;
+    padding-top: 20px;
+    
+    height: 170px;
+    width: 170px;
+}
+@media (max-width: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about_interests ul{
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+}
